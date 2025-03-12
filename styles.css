@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	margin: 0;
+	padding: 0;
+	background-image: url('inveniriaBG.png');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 800px;
+	background-color: #524867;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 
+				0 4px 8px rgba(255, 255, 255, 0.1) inset;
+}
+
+.header {
+	height: 250px;
+	background-image: url('inveniriaLOGO.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.details {
+	background-color: #d2b571;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+summary {
+	font-family: 'Playfair Display';
+	font-size: 1.75rem;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+summary:hover {
+	transform: translateY(-2px) scale(1.02);
+	color: #524867;
+	text-shadow: 2px 2px 6px rgba(82, 72, 103, 0.4);
+}
+
+.instructions {
+    background-color: #c3bbdb;
+    border-left: 5px solid #524867;
+    list-style: none;
+    color: #524867;
+}
+
+.group:focus-within .form-label {
+	transform: translateX(15px);
+}
+
+.form-label {
+	font-family: 'Playfair Display';
+	font-size: 1.25rem;
+	letter-spacing: 0.5px;
+	color: #3e3450;
+	text-shadow: 1px 1px 4px rgba(82, 72, 103, 0.5);
+	transition: all 0.5s ease;
+}
+
+.input-custom {
+	background-color: #e7dffa;
+	border: 2px solid rgba(82, 72, 103, 0.5);
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+	font-size: 1rem;
+	transition: 0.3s ease-in-out;
+}
+
+.input-custom:focus {
+	outline: none;
+	border-color: #b5944a;
+	box-shadow: 0 0 10px rgba(181, 148, 74, 0.5);
+}
+
+.btn-custom {
+	background: linear-gradient(135deg, #524867, #6b5a89);
+	border: none;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2), inset 1px 1px 4px rgba(255, 255, 255, 0.1);
+	font-family: 'Playfair Display';
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+	background: linear-gradient(135deg, #6b5a89, #c3bbdb);
+	box-shadow: 0 0 12px rgba(195, 187, 219, 0.6), inset 1px 1px 6px rgba(255, 255, 255, 0.3);
+	color: #52357a;
+	transform: translateY(-2px);
+}
+
+.btn-custom:active {
+	box-shadow: inset 2px 2px 8px rgba(30, 2, 36, 0.3);
+	color: #52357a !important;
+	transform: scale(0.98);
+}
+
+.form-select {
+	background-color: #e7dffa;
+	border: 2px solid rgba(82, 72, 103, 0.5) !important;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+	font-size: 1rem;
+	transition: 0.3s ease-in-out;
+}
+
+.form-select:focus {
+	outline: none;
+	background-color: #fff;
+	border-color: #b5944a;
+	box-shadow: 0 0 10px rgba(181, 148, 74, 0.5);
+}
+
+#priceResult {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#ticket {
+	width: 50%;
+	transform: translateX(50%);
+}
